@@ -21,7 +21,7 @@ public class Bot {
         //Recoge el dato
         int age = scanner.nextInt();
         //Añade una nueva línea antes de mostrar la siguiente pregunta.
-
+        scanner.nextLine();
         System.out.println("Entonces me dices que tienes " + age + " años. Yo tengo 400 años.");
         System.out.println("Eso quiere decir que soy " + (400/age) + " veces más vieja que tu.");
         System.out.println("Basta de hablar de mi misma. ¿Cuál es tu lenguaje de programación favorito? (Por favor no digas Python)");
@@ -29,10 +29,10 @@ public class Bot {
         //Recoge el dato
         String language = scanner.nextLine();
         //Añade una nueva línea.
-        System.out.println(language + ", ¡Eso es excelente! Mucho gusto haber hablado contigo <name>, ¡Hablamos luego!");
+        System.out.println(language + ", ¡Eso es excelente! Mucho gusto haber hablado contigo " + name + ", ¡Hablamos luego!");
 
         //¿Te acordaste del nextLine trap?
         //Recuerda cerrar el scanner
-
+        scanner.close();
     }
 }
